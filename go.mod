@@ -1,4 +1,4 @@
-module github.com/calmdocs/keyexchange
+module github.com/imclaren/keyexchange
 
 go 1.20
 
