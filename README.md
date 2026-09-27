@@ -4,7 +4,7 @@
 
 Golang Diffie–Hellman key exchange ([DHKE](https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange)) library built using the go standard library and golang.org/x/crypto.
 
-Designed to mirror the Swift [calmdocs/SwiftKeyExchange](https://github.com/imclaren/SwiftKeyExchange) library.  For example we use the same test keys, nonces, and results in this library as we use in the Swift [calmdocs/SwiftKeyExchange](https://github.com/imclaren/SwiftKeyExchange) library.
+Designed to mirror the Swift [imclaren/SwiftKeyExchange](https://github.com/imclaren/SwiftKeyExchange) library.  For example we use the same test keys, nonces, and results in this library as we use in the Swift [imclaren/SwiftKeyExchange](https://github.com/imclaren/SwiftKeyExchange) library.
 
 ## A note on security
 
@@ -109,9 +109,9 @@ Please notify us of any security issues by creating a github issue. Please propo
 Because:
 - when this library was written, [HPKE](https://developer.apple.com/documentation/cryptokit/hpke) was in beta in Apple's Cryptokit library; and
 - when this library was written, there was no HPKE implementation in golang's standard library, or even in golang.org/x/crypto; and
-- using [HPKE](https://developer.apple.com/documentation/cryptokit/hpke) does not allow any messages to be missed or dropped, and one of the author's use-case for this library *requires* some messages to be able to be missed or dropped (for example, this is useful for [calmdocs/SwiftPollManager](https://github.com/imclaren/SwiftPollManager) and [calmdocs/SwiftStreamManager](https://github.com/imclaren/SwiftStreamManager)).
+- using [HPKE](https://developer.apple.com/documentation/cryptokit/hpke) does not allow any messages to be missed or dropped, and one of the author's use-case for this library *requires* some messages to be able to be missed or dropped (for example, this is useful for [imclaren/SwiftPollManager](https://github.com/imclaren/SwiftPollManager) and [imclaren/SwiftStreamManager](https://github.com/imclaren/SwiftStreamManager)).
 
-If the above changes, we will probably add [HPKE](https://developer.apple.com/documentation/cryptokit/hpke) to this library as well as to [calmdocs/SwiftKeyExchange](https://github.com/imclaren/SwiftKeyExchange).  We will also try to follow SemVer, but may not if there are security issues and/or as the underlying encryption used by this library becomes insecure over time. 
+If the above changes, we will probably add [HPKE](https://developer.apple.com/documentation/cryptokit/hpke) to this library as well as to [imclaren/SwiftKeyExchange](https://github.com/imclaren/SwiftKeyExchange).  We will also try to follow SemVer, but may not if there are security issues and/or as the underlying encryption used by this library becomes insecure over time. 
 
 
 
